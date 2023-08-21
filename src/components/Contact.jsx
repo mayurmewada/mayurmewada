@@ -86,7 +86,7 @@ const Contact = () => {
           >
             <div className="flex justify-between">
               <p className={styles.sectionSubText}>Mobile</p>
-              <p className={styles.sectionSubText}>+91 9619142374</p>
+              <p className={styles.sectionSubText}>+91 9969939599</p>
             </div>
             <div className="flex justify-between mt-1">
               <p className={styles.sectionSubText}>Email</p>
