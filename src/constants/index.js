@@ -59,7 +59,7 @@ import {
       icon: creator,
     },
     {
-      title: "Software Developer",
+      title: "UI Developer",
       icon: backend,
     },
   ];
@@ -105,20 +105,7 @@ import {
       company_name: "Koolmind Technolab",
       icon: koolmind,
       iconBg: "#efefef",
-      date: "Mid Dec 2021 - Dec 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "ReactJS Developer Intern",
-      company_name: "MS Web Design Pvt. Ltd.",
-      icon: msweb,
-      iconBg: "#383E56",
-      date: "End Jan 2023 - Mid March 2023",
+      date: "Oct 2022 - Present",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

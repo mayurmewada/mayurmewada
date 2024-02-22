@@ -7,6 +7,7 @@ import { slideIn } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
 
 const Contact = () => {
+  console.log(process.env.REACT_APP_PUBLIC_KEY);
   const formRef = useRef();
 
   const [form, setForm] = useState({
@@ -16,9 +17,14 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+  };
 
-  const handleSubmit = (e) => {};
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
 
   return (
     <>
@@ -29,7 +35,11 @@ const Contact = () => {
         >
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact</h3>
-          <form className="mt-12 flex flex-col gap-8">
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="mt-12 flex flex-col gap-8"
+          >
             <label className="flex flex-col">
               <span className="text-white font-medium mb-4">Your Name</span>
               <input
@@ -86,7 +96,7 @@ const Contact = () => {
           >
             <div className="flex justify-between">
               <p className={styles.sectionSubText}>Mobile</p>
-              <p className={styles.sectionSubText}>+91 9619142374</p>
+              <p className={styles.sectionSubText}>+91 9969939599</p>
             </div>
             <div className="flex justify-between mt-1">
               <p className={styles.sectionSubText}>Email</p>
@@ -104,16 +114,32 @@ const Contact = () => {
             <div className="flex w-full justify-between items-center">
               <p className={styles.sectionSubText}>Social</p>
               <div className="flex justify-end">
-                <a href="https://www.linkedin.com/in/mayur-mewada-419873212/" target='_blank' className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}>
+                <a
+                  href="https://www.linkedin.com/in/mayur-mewada-419873212/"
+                  target="_blank"
+                  className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}
+                >
                   <i class="fa-brands fa-linkedin-in"></i>
                 </a>
-                <a href="https://github.com/mayurmewada" target='_blank' className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}>
+                <a
+                  href="https://github.com/mayurmewada"
+                  target="_blank"
+                  className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}
+                >
                   <i class="fa-brands fa-github"></i>
                 </a>
-                <a href="https://twitter.com/mayurmewadaa" target='_blank' className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}>
+                <a
+                  href="https://twitter.com/mayurmewadaa"
+                  target="_blank"
+                  className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}
+                >
                   <i class="fa-brands fa-twitter"></i>
                 </a>
-                <a href="https://www.instagram.com/mayurmewadaa" target='_blank' className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}>
+                <a
+                  href="https://www.instagram.com/mayurmewadaa"
+                  target="_blank"
+                  className={`${styles.sectionSubText} cursor-pointer hover:text-white text-[22px] ml-5`}
+                >
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </div>
