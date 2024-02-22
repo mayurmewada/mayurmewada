@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mayurmewada/static/css/main.e287b724.css",
-    "main.js": "/mayurmewada/static/js/main.811969d9.js",
+    "main.css": "/mayurmewada/static/css/main.b722e4ec.css",
+    "main.js": "/mayurmewada/static/js/main.ef62ed75.js",
     "static/js/787.1ed0c42c.chunk.js": "/mayurmewada/static/js/787.1ed0c42c.chunk.js",
     "static/media/tripguide.png": "/mayurmewada/static/media/tripguide.991986c795ea140ba063.png",
     "static/media/insure.jpg": "/mayurmewada/static/media/insure.9ea9a240325e5f03b222.jpg",
@@ -23,12 +23,12 @@
     "static/media/menu.svg": "/mayurmewada/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "index.html": "/mayurmewada/index.html",
     "static/media/threejs.svg": "/mayurmewada/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
-    "main.e287b724.css.map": "/mayurmewada/static/css/main.e287b724.css.map",
-    "main.811969d9.js.map": "/mayurmewada/static/js/main.811969d9.js.map",
+    "main.b722e4ec.css.map": "/mayurmewada/static/css/main.b722e4ec.css.map",
+    "main.ef62ed75.js.map": "/mayurmewada/static/js/main.ef62ed75.js.map",
     "787.1ed0c42c.chunk.js.map": "/mayurmewada/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e287b724.css",
-    "static/js/main.811969d9.js"
+    "static/css/main.b722e4ec.css",
+    "static/js/main.ef62ed75.js"
   ]
 }
