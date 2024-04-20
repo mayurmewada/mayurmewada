@@ -1,10 +1,10 @@
 import React, { Suspense, useEffect, useState } from "react";
-import { Canvas, extend } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF(`${process.env.PUBLIC_URL}/desktop_pc/scene.gltf`);
+  const computer = useGLTF('/desktop_pc/scene.gltf'); // Removed process.env.PUBLIC_URL
 
   return (
     <mesh>
@@ -32,18 +32,16 @@ const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
-
-    setIsMobile(mediaQuery.matches);
-
-    const handleMediaQueryChange = (event) => {
-      setIsMobile(event.matches);
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 500); // Adjust the breakpoint as needed
     };
 
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    handleResize(); // Initial check
+
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      window.removeEventListener("resize", handleResize);
     };
   }, []);
 

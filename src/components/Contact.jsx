@@ -5,9 +5,9 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
+import axios from 'axios';
 
 const Contact = () => {
-  console.log(process.env.REACT_APP_PUBLIC_KEY);
   const formRef = useRef();
 
   const [form, setForm] = useState({
@@ -17,13 +17,26 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
-  };
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!form.name || !form.email || !form.message) {
+      alert("Please fill fields");
+      return;
+    }
+    setLoading(true);
+    try {
+      await axios.post(`${process.env.REACT_APP_BASE_URL}/contact`, form);
+      alert("Form submitted successfully.");
+      setForm({
+        name: "",
+        email: "",
+        message: ""
+      });
+      setLoading(false);
+    } catch (error) {
+      alert("Something went wrong");
+      setLoading(false);
+    }
   };
 
   return (
@@ -46,7 +59,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 value={form.name}
-                onChange={handleChange}
+                onChange={e => setForm({ ...form, name: e.target.value })}
                 placeholder="What's your name?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
@@ -57,7 +70,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 value={form.email}
-                onChange={handleChange}
+                onChange={e => setForm({ ...form, email: e.target.value })}
                 placeholder="Enter your Email"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
@@ -68,7 +81,7 @@ const Contact = () => {
                 rows="7"
                 name="message"
                 value={form.message}
-                onChange={handleChange}
+                onChange={e => setForm({ ...form, message: e.target.value })}
                 placeholder="What do you want to say?"
                 className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
               />
