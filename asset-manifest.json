@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mayurmewada/static/css/main.fe304031.css",
-    "main.js": "/mayurmewada/static/js/main.740fb703.js",
+    "main.js": "/mayurmewada/static/js/main.b13f8687.js",
     "static/js/453.1407b060.chunk.js": "/mayurmewada/static/js/453.1407b060.chunk.js",
     "static/media/herobg.png": "/mayurmewada/static/media/herobg.ad33add2430e34307c33.png",
     "static/media/desktop.png": "/mayurmewada/static/media/desktop.be196e086d58383423d6.png",
@@ -20,11 +20,11 @@
     "index.html": "/mayurmewada/index.html",
     "static/media/threejs.svg": "/mayurmewada/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "main.fe304031.css.map": "/mayurmewada/static/css/main.fe304031.css.map",
-    "main.740fb703.js.map": "/mayurmewada/static/js/main.740fb703.js.map",
+    "main.b13f8687.js.map": "/mayurmewada/static/js/main.b13f8687.js.map",
     "453.1407b060.chunk.js.map": "/mayurmewada/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.fe304031.css",
-    "static/js/main.740fb703.js"
+    "static/js/main.b13f8687.js"
   ]
 }
