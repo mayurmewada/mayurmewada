@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/mayurmewada/static/css/main.d00542a1.css",
-    "main.js": "/mayurmewada/static/js/main.1bc6ba7d.js",
+    "main.js": "/mayurmewada/static/js/main.64a87093.js",
     "static/js/787.1ed0c42c.chunk.js": "/mayurmewada/static/js/787.1ed0c42c.chunk.js",
     "static/media/herobg.png": "/mayurmewada/static/media/herobg.ad33add2430e34307c33.png",
     "static/media/desktop.png": "/mayurmewada/static/media/desktop.be196e086d58383423d6.png",
@@ -20,11 +20,11 @@
     "index.html": "/mayurmewada/index.html",
     "static/media/threejs.svg": "/mayurmewada/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
     "main.d00542a1.css.map": "/mayurmewada/static/css/main.d00542a1.css.map",
-    "main.1bc6ba7d.js.map": "/mayurmewada/static/js/main.1bc6ba7d.js.map",
+    "main.64a87093.js.map": "/mayurmewada/static/js/main.64a87093.js.map",
     "787.1ed0c42c.chunk.js.map": "/mayurmewada/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d00542a1.css",
-    "static/js/main.1bc6ba7d.js"
+    "static/js/main.64a87093.js"
   ]
 }
