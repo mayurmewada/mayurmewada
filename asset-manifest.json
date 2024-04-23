@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mayurmewada/static/css/main.fe304031.css",
-    "main.js": "/mayurmewada/static/js/main.b13f8687.js",
+    "main.css": "/mayurmewada/static/css/main.8c1efedd.css",
+    "main.js": "/mayurmewada/static/js/main.1b8c1bcd.js",
     "static/js/453.1407b060.chunk.js": "/mayurmewada/static/js/453.1407b060.chunk.js",
     "static/media/herobg.png": "/mayurmewada/static/media/herobg.ad33add2430e34307c33.png",
+    "static/media/aceme6.png": "/mayurmewada/static/media/aceme6.a86e7f5ef0c4b175c1bb.png",
     "static/media/desktop.png": "/mayurmewada/static/media/desktop.be196e086d58383423d6.png",
     "static/media/logo.png": "/mayurmewada/static/media/logo.0acb7b6142172e494021.png",
-    "static/media/femologist.png": "/mayurmewada/static/media/femologist.a598ef40fba870f5db0e.png",
+    "static/media/petsie.png": "/mayurmewada/static/media/petsie.2ea27c4cb7207f4ba52b.png",
     "static/media/wave.jpg": "/mayurmewada/static/media/wave.4d02748c6426b12312b1.jpg",
     "static/media/web.png": "/mayurmewada/static/media/web.c0cb2cc13791a26822d3.png",
-    "static/media/todo.png": "/mayurmewada/static/media/todo.11db2f1089a993f4375e.png",
     "static/media/backend.png": "/mayurmewada/static/media/backend.08c8d93b8142c41a9e63.png",
     "static/media/mobile.png": "/mayurmewada/static/media/mobile.15e7b89f1018dcdba6e7.png",
     "static/media/creator.png": "/mayurmewada/static/media/creator.f8923ce18390029928ac.png",
@@ -19,12 +19,12 @@
     "static/media/menu.svg": "/mayurmewada/static/media/menu.acf64a387fc724c7a47a3a0120d5dc52.svg",
     "index.html": "/mayurmewada/index.html",
     "static/media/threejs.svg": "/mayurmewada/static/media/threejs.34d1dab4caddf9c51437e9bafd282582.svg",
-    "main.fe304031.css.map": "/mayurmewada/static/css/main.fe304031.css.map",
-    "main.b13f8687.js.map": "/mayurmewada/static/js/main.b13f8687.js.map",
+    "main.8c1efedd.css.map": "/mayurmewada/static/css/main.8c1efedd.css.map",
+    "main.1b8c1bcd.js.map": "/mayurmewada/static/js/main.1b8c1bcd.js.map",
     "453.1407b060.chunk.js.map": "/mayurmewada/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fe304031.css",
-    "static/js/main.b13f8687.js"
+    "static/css/main.8c1efedd.css",
+    "static/js/main.1b8c1bcd.js"
   ]
 }
