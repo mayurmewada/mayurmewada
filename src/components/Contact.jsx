@@ -5,7 +5,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { slideIn } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
-import axios from 'axios';
+// import axios from 'axios';
 
 const Contact = () => {
   const formRef = useRef();
@@ -17,21 +17,58 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
+  //   if (!form.name || !form.email || !form.message) {
+  //     alert("Please fill fields");
+  //     return;
+  //   }
+  //   setLoading(true);
+  //   try {
+  //     await axios.post(`${process.env.REACT_APP_BASE_URL}/contact`, form);
+  //     alert("Form submitted successfully.");
+  //     setForm({
+  //       name: "",
+  //       email: "",
+  //       message: ""
+  //     });
+  //     setLoading(false);
+  //   } catch (error) {
+  //     alert("Something went wrong");
+  //     setLoading(false);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
     if (!form.name || !form.email || !form.message) {
       alert("Please fill fields");
       return;
     }
+    
     setLoading(true);
+    
     try {
-      await axios.post(`${process.env.REACT_APP_BASE_URL}/contact`, form);
-      alert("Form submitted successfully.");
-      setForm({
-        name: "",
-        email: "",
-        message: ""
+      const response = await fetch(`${process.env.REACT_APP_BASE_URL}/contact`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(form),
       });
+      
+      if (response.ok) {
+        alert("Form submitted successfully.");
+        setForm({
+          name: "",
+          email: "",
+          message: ""
+        });
+      } else {
+        throw new Error("Network response was not ok");
+      }
+      
       setLoading(false);
     } catch (error) {
       alert("Something went wrong");

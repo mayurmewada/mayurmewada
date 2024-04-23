@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
-  const computer = useGLTF('/desktop_pc/scene.gltf'); // Removed process.env.PUBLIC_URL
+  const computer = useGLTF(`${process.env.PUBLIC_URL}/desktop_pc/scene.gltf`); // Removed process.env.PUBLIC_URL
 
   return (
     <mesh>
